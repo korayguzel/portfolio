@@ -1,347 +1,416 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ömür Koray Güzel — Molecular Biologist & Bioinformatician</title>
-  <meta name="description" content="Portfolio of Ömür Koray Güzel — Molecular Biologist, Bioinformatician, and Computational Tool Builder.">
-  <link rel="stylesheet" href="style.css">
+  <title>Ömür Koray Güzel | Pop!_OS-Inspired Bioinformatics Portfolio</title>
+  <meta name="description" content="Portfolio of Ömür Koray Güzel, a molecular biologist building computational tools for biological research.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="background-orb orb-a" aria-hidden="true"></div>
+  <div class="background-orb orb-b" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">OKG</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#hero">OKG / Pop!_OS Workstation</a>
+      <nav class="quick-nav" aria-label="Section shortcuts">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- Scroll Progress -->
-  <div class="scroll-progress" id="scroll-progress"></div>
-
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-content">
-      <p class="hero-greeting reveal">Hi, I'm</p>
-      <h1 class="hero-name reveal">Ömür Koray <span class="accent">Güzel</span></h1>
-      <p class="hero-title reveal">Molecular Biologist · Bioinformatician · Computational Tool Builder</p>
-      <p class="hero-subtitle reveal">Building open-source computational tools for biological problems.</p>
-      <div class="hero-cta reveal">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+  <main class="shell-layout">
+    <section class="terminal-window hero-window reveal" id="hero">
+      <div class="terminal-chrome">
+        <div class="chrome-lights" aria-hidden="true">
+          <span class="light light-orange"></span>
+          <span class="light light-cyan"></span>
+          <span class="light light-purple"></span>
+        </div>
+        <div class="terminal-title">koray@pop-os: ~/portfolio</div>
+        <div class="terminal-meta">research mode</div>
       </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <div class="mouse">
-        <div class="wheel"></div>
-      </div>
-    </div>
-  </section>
+      <div class="terminal-body">
+        <div class="prompt-line">
+          <span class="prompt">koray@pop-os:~$</span>
+          <span class="command">whoami</span>
+        </div>
+        <div class="terminal-output hero-output">
+          <p class="eyebrow">Molecular Biology x Computational Tooling</p>
+          <h1>Ömür Koray Güzel</h1>
+          <p class="hero-copy">
+            Molecular biologist and bioinformatician building research-driven, open-source
+            computational tools for biological problems.
+          </p>
+          <p class="hero-copy hero-copy-muted">
+            My workflow is simple: read deeply, find the tooling gap, learn the missing technique,
+            and ship something useful.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Inspect Projects</a>
+            <a class="button button-secondary" href="#contact">Open Contact</a>
+          </div>
+        </div>
 
-  <!-- About Section -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title reveal">About Me</h2>
-      <div class="about-content">
-        <div class="about-text reveal">
+        <div class="hero-grid">
+          <article class="info-panel reveal">
+            <span class="panel-label">Current Focus</span>
+            <p>AI-driven bioimage analysis, protein quality control, and practical research tooling.</p>
+          </article>
+          <article class="info-panel reveal">
+            <span class="panel-label">Research Lens</span>
+            <p>Aging biology, cellular senescence, proteomics, transcriptomics, and model validation.</p>
+          </article>
+          <article class="info-panel reveal">
+            <span class="panel-label">Working Style</span>
+            <p>Independent, literature-first, tool-oriented, and comfortable across wet lab and code.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-window reveal" id="about">
+      <div class="terminal-chrome">
+        <div class="chrome-lights" aria-hidden="true">
+          <span class="light light-orange"></span>
+          <span class="light light-cyan"></span>
+          <span class="light light-purple"></span>
+        </div>
+        <div class="terminal-title">koray@pop-os: ~/portfolio/about.md</div>
+        <div class="terminal-meta">cat about.md</div>
+      </div>
+      <div class="terminal-body">
+        <div class="prompt-line">
+          <span class="prompt">koray@pop-os:~/portfolio$</span>
+          <span class="command">cat about.md</span>
+        </div>
+        <div class="terminal-output prose-block">
           <p>
             I graduated in <strong>Molecular Biology and Genetics</strong> from Istanbul Technical University.
-            During my master's program at Acıbadem University (Molecular and Translational Biomedicine),
-            I worked on <strong>aging research</strong> with long-lived cell models.
+            During my master's studies at <strong>Acıbadem University</strong>, I worked on aging research with
+            long-lived cell models and developed a stronger pull toward computational analysis.
           </p>
           <p>
-            In my second year, I joined <strong>Rizzoli Lab at University Medicine Göttingen</strong>
-            as a guest researcher — analyzing proteomic and transcriptomic data on brain aging,
-            performing immunofluorescence staining and cryostat sectioning in the wet lab, and
-            building R/Bioconductor pipelines (DESeq2, WGCNA) on the computational side.
+            At <strong>Rizzoli Lab, University Medicine Göttingen</strong>, I analyzed proteomic and transcriptomic
+            data on brain aging, performed immunofluorescence staining and cryostat sectioning, and built
+            R/Bioconductor pipelines with tools such as DESeq2 and WGCNA.
           </p>
           <p>
-            After returning, I left the master's program to pursue independent research.
-            Now I build <strong>open-source computational tools</strong> for biological problems.
-            My approach: systematically survey the literature, find gaps in existing tools,
-            learn the necessary techniques, and ship a working tool.
-          </p>
-          <p class="about-note">
-            I'm not a proficient programmer — I vibe code with Claude Code and know enough
-            to steer and validate the output.
+            I later left the master's program to pursue independent research and tool building. I use AI-assisted
+            coding heavily, but the real value I bring is biological judgment, problem framing, literature review,
+            and validating whether the tool is scientifically useful.
           </p>
         </div>
-        <div class="about-stats reveal">
-          <div class="stat-card">
-            <span class="stat-number" data-target="2">0</span>
-            <span class="stat-label">Tools Built</span>
+
+        <div class="workflow-strip reveal">
+          <div class="workflow-step">
+            <span class="workflow-index">01</span>
+            <span class="workflow-text">Survey literature</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-number" data-target="250">0</span>
-            <span class="stat-label">Tests in ProtQC</span>
+          <div class="workflow-step">
+            <span class="workflow-index">02</span>
+            <span class="workflow-text">Map the tooling gap</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-number" data-target="3">0</span>
-            <span class="stat-label">Research Institutions</span>
+          <div class="workflow-step">
+            <span class="workflow-index">03</span>
+            <span class="workflow-text">Prototype fast</span>
+          </div>
+          <div class="workflow-step">
+            <span class="workflow-index">04</span>
+            <span class="workflow-text">Validate and ship</span>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Research Interests -->
-  <section class="section section-alt" id="interests">
-    <div class="container">
-      <h2 class="section-title reveal">Research Interests</h2>
-      <div class="interests-grid">
-        <div class="interest-card reveal">
-          <div class="interest-icon">🧬</div>
-          <h3>Cellular Senescence & Aging</h3>
-          <p>Understanding the mechanisms of cellular aging and senescence-associated phenotypes.</p>
+    <section class="terminal-window reveal" id="projects">
+      <div class="terminal-chrome">
+        <div class="chrome-lights" aria-hidden="true">
+          <span class="light light-orange"></span>
+          <span class="light light-cyan"></span>
+          <span class="light light-purple"></span>
         </div>
-        <div class="interest-card reveal">
-          <div class="interest-icon">🔬</div>
-          <h3>AI-Driven Bioimage Analysis</h3>
-          <p>Applying vision-language models to fluorescence microscopy for automated phenotype detection.</p>
+        <div class="terminal-title">koray@pop-os: ~/projects</div>
+        <div class="terminal-meta">ls -la</div>
+      </div>
+      <div class="terminal-body">
+        <div class="prompt-line">
+          <span class="prompt">koray@pop-os:~/projects$</span>
+          <span class="command">ls -la active_tools</span>
         </div>
-        <div class="interest-card reveal">
-          <div class="interest-icon">🧪</div>
-          <h3>Protein Structure Validation</h3>
-          <p>Physics-based quality control for AI-designed protein structures.</p>
-        </div>
-        <div class="interest-card reveal">
-          <div class="interest-icon">🤖</div>
-          <h3>Multi-Agent Systems for Biology</h3>
-          <p>Exploring autonomous agent workflows for computational biology tasks.</p>
-        </div>
-        <div class="interest-card reveal">
-          <div class="interest-icon">📦</div>
-          <h3>Open-Source Bioinformatics</h3>
-          <p>Building and sharing tools that make computational biology more accessible.</p>
+
+        <div class="project-list">
+          <article class="project-entry reveal">
+            <div class="project-head">
+              <div>
+                <p class="project-status released">released / production-ready</p>
+                <h2>ProtQC</h2>
+                <p class="project-tagline">Physics-based quality control for AI-designed proteins</p>
+              </div>
+              <a class="project-link" href="https://github.com/korayguzel/protqc" target="_blank" rel="noopener">Open GitHub</a>
+            </div>
+            <p class="project-summary">
+              A practical validation pipeline for generated protein structures that combines molecular dynamics,
+              cavity detection, hydrogen-bond persistence, secondary structure stability, SASA checks, and a
+              composite PASS/WARNING/FAIL verdict.
+            </p>
+            <div class="proof-grid">
+              <div class="proof-item">
+                <span class="proof-label">Built For</span>
+                <span class="proof-value">AI protein structure validation</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Output</span>
+                <span class="proof-value">CLI workflow + FastQC-style HTML reports</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Reliability</span>
+                <span class="proof-value">250+ tests</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Compute</span>
+                <span class="proof-value">CUDA acceleration + Docker support</span>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>OpenMM</span>
+              <span>fpocket</span>
+              <span>Docker</span>
+              <span>CUDA</span>
+              <span>LLM Assistant</span>
+            </div>
+          </article>
+
+          <article class="project-entry reveal">
+            <div class="project-head">
+              <div>
+                <p class="project-status developing">in progress / research build</p>
+                <h2>SenVLM</h2>
+                <p class="project-tagline">Vision-language model for cellular senescence detection</p>
+              </div>
+              <span class="project-link project-link-muted">Private research build</span>
+            </div>
+            <p class="project-summary">
+              A vision-language approach for identifying cellular senescence from fluorescence microscopy,
+              aimed at a literature gap where VLMs have not been meaningfully applied to this task.
+            </p>
+            <div class="proof-grid">
+              <div class="proof-item">
+                <span class="proof-label">Research Angle</span>
+                <span class="proof-value">Cellular senescence phenotype detection</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Training Approach</span>
+                <span class="proof-value">QLoRA fine-tuning</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Base Models</span>
+                <span class="proof-value">Qwen3-VL + Phi-4-reasoning-vision</span>
+              </div>
+              <div class="proof-item">
+                <span class="proof-label">Data Source</span>
+                <span class="proof-value">SenNet consortium data</span>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>QLoRA</span>
+              <span>Qwen3-VL</span>
+              <span>SenNet</span>
+              <span>Fluorescence Imaging</span>
+            </div>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects Section -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2 class="section-title reveal">Projects</h2>
-      <div class="projects-grid">
-
-        <!-- ProtQC -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-status released">Released</div>
-            <a href="https://github.com/korayguzel/protqc" target="_blank" rel="noopener" class="project-link" aria-label="View ProtQC on GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            </a>
-          </div>
-          <h3 class="project-name">ProtQC</h3>
-          <p class="project-tagline">Physics-based quality control for AI-designed proteins</p>
-          <p class="project-description">
-            MD simulation (OpenMM) + cavity detection (fpocket) + H-bond persistence +
-            secondary structure stability + SASA check + composite PASS/WARNING/FAIL verdict.
-            Interactive CLI, AI chat assistant with 8 LLM providers, FastQC-style HTML reports,
-            CUDA GPU accelerated, Docker support, 250 tests.
-          </p>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>OpenMM</span>
-            <span>fpocket</span>
-            <span>Docker</span>
-            <span>CUDA</span>
-          </div>
+    <section class="terminal-window reveal" id="stack">
+      <div class="terminal-chrome">
+        <div class="chrome-lights" aria-hidden="true">
+          <span class="light light-orange"></span>
+          <span class="light light-cyan"></span>
+          <span class="light light-purple"></span>
         </div>
-
-        <!-- SenVLM -->
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div class="project-status in-dev">In Development</div>
-          </div>
-          <h3 class="project-name">SenVLM</h3>
-          <p class="project-tagline">Vision-Language Model for cellular senescence detection</p>
-          <p class="project-description">
-            Detects cellular senescence from fluorescence microscopy (IF) images using a
-            Vision-Language Model — the first VLM applied to this domain in the literature.
-            QLoRA fine-tuning with SenNet consortium data. Qwen3-VL base model,
-            Phi-4-reasoning-vision for annotation distillation.
-          </p>
-          <div class="project-tech">
-            <span>Python</span>
-            <span>QLoRA</span>
-            <span>Qwen3-VL</span>
-            <span>SenNet</span>
-            <span>VLM</span>
-          </div>
-        </div>
-
+        <div class="terminal-title">koray@pop-os: ~/.stack</div>
+        <div class="terminal-meta">cat ~/.stack</div>
       </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="section section-alt" id="skills">
-    <div class="container">
-      <h2 class="section-title reveal">Skills</h2>
-      <div class="skills-grid">
-
-        <div class="skill-category reveal">
-          <h3>Wet Lab</h3>
-          <div class="skill-pills">
-            <span>Cell Culture</span>
-            <span>IF Staining</span>
-            <span>Western Blot</span>
-            <span>ELISA</span>
-            <span>PCR / qPCR</span>
-            <span>Nucleic Acid Isolation</span>
-            <span>Cryostat Sectioning</span>
-            <span>Zymography</span>
-          </div>
+      <div class="terminal-body">
+        <div class="prompt-line">
+          <span class="prompt">koray@pop-os:~$</span>
+          <span class="command">cat ~/.stack</span>
         </div>
 
-        <div class="skill-category reveal">
-          <h3>Bioinformatics</h3>
-          <div class="skill-pills">
-            <span>R</span>
-            <span>DESeq2</span>
-            <span>WGCNA</span>
-            <span>DEqMS</span>
-            <span>Python</span>
-            <span>NGS Analysis</span>
-          </div>
-        </div>
+        <div class="stack-grid">
+          <article class="stack-card reveal">
+            <h3>Wet Lab</h3>
+            <div class="tag-row">
+              <span>Cell Culture</span>
+              <span>IF Staining</span>
+              <span>Western Blot</span>
+              <span>ELISA</span>
+              <span>PCR / qPCR</span>
+              <span>Nucleic Acid Isolation</span>
+              <span>Cryostat Sectioning</span>
+              <span>Zymography</span>
+            </div>
+          </article>
 
-        <div class="skill-category reveal">
-          <h3>AI / ML</h3>
-          <div class="skill-pills">
-            <span>QLoRA Fine-tuning</span>
-            <span>VLM Training</span>
-            <span>LLM Integration</span>
-          </div>
-        </div>
+          <article class="stack-card reveal">
+            <h3>Bioinformatics</h3>
+            <div class="tag-row">
+              <span>R</span>
+              <span>Python</span>
+              <span>DESeq2</span>
+              <span>WGCNA</span>
+              <span>DEqMS</span>
+              <span>NGS Analysis</span>
+            </div>
+          </article>
 
-        <div class="skill-category reveal">
-          <h3>Tools</h3>
-          <div class="skill-pills">
-            <span>Claude Code</span>
-            <span>Git / GitHub</span>
-            <span>Docker</span>
-            <span>Google Colab</span>
-            <span>VMD</span>
-            <span>Chimera</span>
-            <span>ImageJ</span>
-          </div>
-        </div>
+          <article class="stack-card reveal">
+            <h3>AI / ML</h3>
+            <div class="tag-row">
+              <span>QLoRA Fine-tuning</span>
+              <span>VLM Training</span>
+              <span>LLM Integration</span>
+              <span>Multi-Agent Workflows</span>
+            </div>
+          </article>
 
-        <div class="skill-category reveal">
-          <h3>Languages</h3>
-          <div class="skill-pills">
-            <span>Turkish (Native)</span>
-            <span>English (Fluent)</span>
-          </div>
-        </div>
+          <article class="stack-card reveal">
+            <h3>Tooling</h3>
+            <div class="tag-row">
+              <span>Git / GitHub</span>
+              <span>Docker</span>
+              <span>Google Colab</span>
+              <span>VMD</span>
+              <span>Chimera</span>
+              <span>ImageJ</span>
+              <span>Claude Code</span>
+            </div>
+          </article>
 
+          <article class="stack-card reveal">
+            <h3>Research Interests</h3>
+            <div class="tag-row">
+              <span>Cellular Senescence</span>
+              <span>Brain Aging</span>
+              <span>Protein Validation</span>
+              <span>Bioimage Analysis</span>
+              <span>Open-Source Biology Tools</span>
+            </div>
+          </article>
+
+          <article class="stack-card reveal">
+            <h3>Languages</h3>
+            <div class="tag-row">
+              <span>Turkish / Native</span>
+              <span>English / Fluent</span>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section class="section" id="experience">
-    <div class="container">
-      <h2 class="section-title reveal">Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2022 — 2023</span>
-            <h3>Guest Researcher</h3>
-            <p class="timeline-place">Rizzoli Lab, University Medicine Göttingen</p>
-            <p>Proteomic and transcriptomic data analysis on brain aging. Immunofluorescence staining, cryostat sectioning, R/Bioconductor pipeline development.</p>
-          </div>
+    <section class="terminal-window reveal" id="experience">
+      <div class="terminal-chrome">
+        <div class="chrome-lights" aria-hidden="true">
+          <span class="light light-orange"></span>
+          <span class="light light-cyan"></span>
+          <span class="light light-purple"></span>
+        </div>
+        <div class="terminal-title">koray@pop-os: ~/experience.log</div>
+        <div class="terminal-meta">tail -n 20 experience.log</div>
+      </div>
+      <div class="terminal-body">
+        <div class="prompt-line">
+          <span class="prompt">koray@pop-os:~/experience$</span>
+          <span class="command">tail -n 20 experience.log</span>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2021 — 2023</span>
-            <h3>Master's Candidate</h3>
-            <p class="timeline-place">Acıbadem University — Molecular and Translational Biomedicine</p>
-            <p>Aging research with long-lived cell models. Left program to pursue independent research.</p>
-          </div>
-        </div>
+        <div class="timeline">
+          <article class="timeline-entry reveal">
+            <span class="timeline-date">2022 - 2023</span>
+            <div class="timeline-card">
+              <h3>Guest Researcher</h3>
+              <p class="timeline-place">Rizzoli Lab, University Medicine Göttingen</p>
+              <p>Proteomic and transcriptomic analysis on brain aging, plus immunofluorescence staining, cryostat sectioning, and R/Bioconductor pipeline development.</p>
+            </div>
+          </article>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
+          <article class="timeline-entry reveal">
+            <span class="timeline-date">2021 - 2023</span>
+            <div class="timeline-card">
+              <h3>Master's Candidate</h3>
+              <p class="timeline-place">Acıbadem University, Molecular and Translational Biomedicine</p>
+              <p>Worked on aging research with long-lived cell models before pivoting toward independent computational tool building.</p>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
             <span class="timeline-date">2021</span>
-            <h3>B.Sc. Senior Thesis</h3>
-            <p class="timeline-place">Istanbul Technical University</p>
-            <p>Investigated melatonin effects on TIMP2 expression.</p>
-          </div>
+            <div class="timeline-card">
+              <h3>B.Sc. Senior Thesis</h3>
+              <p class="timeline-place">Istanbul Technical University</p>
+              <p>Investigated melatonin effects on TIMP2 expression.</p>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
+            <span class="timeline-date">2019 - 2021</span>
+            <div class="timeline-card">
+              <h3>Research Intern</h3>
+              <p class="timeline-place">Antalya Training and Research Hospital, Medical Genetics Lab</p>
+              <p>Hands-on training in medical genetics laboratory methods and research workflow fundamentals.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="terminal-window reveal" id="contact">
+      <div class="terminal-chrome">
+        <div class="chrome-lights" aria-hidden="true">
+          <span class="light light-orange"></span>
+          <span class="light light-cyan"></span>
+          <span class="light light-purple"></span>
+        </div>
+        <div class="terminal-title">koray@pop-os: ~/.contact</div>
+        <div class="terminal-meta">cat ~/.contact</div>
+      </div>
+      <div class="terminal-body">
+        <div class="prompt-line">
+          <span class="prompt">koray@pop-os:~$</span>
+          <span class="command">cat ~/.contact</span>
         </div>
 
-        <div class="timeline-item reveal">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2019 — 2021</span>
-            <h3>Research Intern</h3>
-            <p class="timeline-place">Antalya Training and Research Hospital — Medical Genetics Lab</p>
-            <p>Hands-on experience in medical genetics laboratory techniques and research methodology.</p>
+        <div class="contact-block reveal">
+          <p class="contact-intro">
+            If you are working on computational biology, open-source scientific tooling,
+            or AI-assisted research workflows, I am open to collaboration.
+          </p>
+          <div class="contact-lines">
+            <a href="mailto:okorayguzel@gmail.com">email=okorayguzel@gmail.com</a>
+            <a href="https://github.com/korayguzel" target="_blank" rel="noopener">github=https://github.com/korayguzel</a>
+            <a href="https://www.linkedin.com/in/okorayguzel/" target="_blank" rel="noopener">linkedin=https://www.linkedin.com/in/okorayguzel/</a>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Contact Section -->
-  <section class="section section-alt" id="contact">
-    <div class="container">
-      <h2 class="section-title reveal">Get in Touch</h2>
-      <p class="contact-subtitle reveal">Interested in collaboration or have questions? Feel free to reach out.</p>
-      <div class="contact-grid">
-
-        <a href="mailto:okorayguzel@gmail.com" class="contact-card reveal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          <span class="contact-label">Email</span>
-          <span class="contact-value">okorayguzel@gmail.com</span>
-        </a>
-
-        <a href="https://github.com/korayguzel" target="_blank" rel="noopener" class="contact-card reveal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-          <span class="contact-label">GitHub</span>
-          <span class="contact-value">korayguzel</span>
-        </a>
-
-        <a href="https://www.linkedin.com/in/okorayguzel/" target="_blank" rel="noopener" class="contact-card reveal">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          <span class="contact-label">LinkedIn</span>
-          <span class="contact-value">Connect with me</span>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Ömür Koray Güzel. Built with curiosity.</p>
-    </div>
+    <p>Built on a Pop!_OS-inspired workstation theme. Content remains grounded in biology, tooling, and shipped work.</p>
   </footer>
 
   <script src="script.js"></script>
